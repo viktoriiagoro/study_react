@@ -43,44 +43,48 @@ const Content =() => {
                 </Col>
                 <Col span={18}>
                     <div className='content-block-right'>
-                        <div className='content-profile-right'>
-                            <div className='info-right-finance'>ФИНАНСЫ</div>
-                            <div className='info-right-content'>Мои операции</div>
-                            <div className='profile-photo'>
-                                <img className='img-arrow' src={arrow} alt='arrow' />
-                                {/* <div className='icon-pencil'><ArrowRightOutlined /></div> */}
-                            </div>
-                        </div>
                         <div className='content-profile-right-card' >
-                            <div className='content-profile-right-card-left'>
-                                <div className='profile-expence'>
-                                    <div className='content-profile-wallet'>
-                                        <img className='img-wallet' src={wallet} alt='wallet' />
+                            <div>
+                                <div className='info-right-finance'>ФИНАНСЫ</div>
+                                <div className='content-profile-right-card-left'>
+                                    <div className='profile-expence'>
+                                        <div className='content-profile-wallet'>
+                                            <img className='img-wallet' src={wallet} alt='wallet' />
+                                        </div>
+                                        <img className='img-figure' src={figure} alt='wallet' width='87px' height='28px'/>
                                     </div>
-                                    <img className='img-figure' src={figure} alt='wallet' width='87px' height='28px'/>
-                                </div>
-                                <div className='wallet-text-info'>Пополните баланс вашего кошелька удобным для вас способом </div>
-                                <div className='button-right-wallet'>
-                                    <div className='button-left-right'>
-                                        <button className='button-left'>
-                                            <div className='button-icon-plus'><PlusCircleOutlined /></div>
-                                            <div className='button-text-info'>Пополнение </div>
-                                        </button>
-                                        <button className='button-right'>
-                                            <div className='button-icon-minus'><MinusCircleOutlined /></div>
-                                            <div className='button-text-conclusion'>Вывод </div>
-                                        </button>
+                                    <div className='wallet-text-info'>Пополните баланс вашего кошелька удобным для вас способом </div>
+                                    <div className='button-right-wallet'>
+                                        <div className='button-left-right'>
+                                            <button className='button-left'>
+                                                <div className='button-icon-plus'><PlusCircleOutlined /></div>
+                                                <div className='button-text-info'>Пополнение </div>
+                                            </button>
+                                            <button className='button-right'>
+                                                <div className='button-icon-minus'><MinusCircleOutlined /></div>
+                                                <div className='button-text-conclusion'>Вывод </div>
+                                            </button>
+                                        </div>
+                                        <div></div>
                                     </div>
-                                    <div></div>
                                 </div>
                             </div>
-                            <div className='content-profile-right-card-right'>
-                                <div className='icon-right-card'>
-                                    <img src={arrowup} alt='arrowup' />
-                                    <img className='wallet-2' src={wallet} alt='wallet' />
-                                    <img src={arrowdown} alt='arrowdown' />
+                            <div className='profile-content-users'>
+                                <div className='content-profile-right'>
+                                    <div className='info-right-content'>Мои операции</div>
+                                    <div className='profile-photo-2'>
+                                        <img className='img-arrow' src={arrow} alt='arrow' />
+                                    </div>
                                 </div>
-                                <div className='text-right-card'>У вас пока нет операций</div>
+                                <div className='content-profile-right-card-right'>
+                                    <div className='icon-right-card' >
+                                        <img src={arrowup} alt='arrowup' />
+                                        <img className='wallet-2' src={wallet} alt='wallet' />
+                                        <img src={arrowdown} alt='arrowdown' />
+                                        <div className='text-right-card'>У вас пока нет операций</div>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
