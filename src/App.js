@@ -1,9 +1,10 @@
 import Sidebar from './components/Sidebar'
 import Header from './components/Header'
-import Line from './components/Line'
-import Content from './components/Content'
-import Basic from './components/Basic'
 import { Layout } from 'antd';
+import { Routes, Route } from 'react-router-dom';
+import External from './pages/External'
+import Internal from './pages/Internal'
+import Line from './components/Line'
 
 
 const App = () => {
@@ -12,10 +13,12 @@ const App = () => {
       <Sidebar />
       <Layout className='section' >
         <Header />
+        <Line />
         <Layout.Content>
-          <Line />
-          <Content />
-          <Basic />
+          <Routes>
+            <Route exact path="/" element={<External />} />
+            <Route path="/internal" element={<Internal />} />
+          </Routes>
         </Layout.Content>
       </Layout>
     </Layout>

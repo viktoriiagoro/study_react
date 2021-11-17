@@ -1,5 +1,4 @@
 import './index.scss'
-import { CaretRightOutlined } from '@ant-design/icons';
 import { Layout } from 'antd';
 import x100 from '../../img/x100.png'
 import windows from '../../img/windows.png'
@@ -8,17 +7,18 @@ import baggage from '../../img/baggage.png'
 import info from '../../img/info.png'
 import list from '../../img/list.png'
 import canculator from '../../img/canculator.png'
+import { Link, useLocation } from "react-router-dom";
 
 
 const NAVIGATION = [
     {
         icon: windows,
-        path: '/dashboard',
+        path: '/',
         isActive: true
     },
     {
         icon: basket,
-        path: '/products',
+        path: '/internal',
         isActive: false
     },
     {
@@ -39,6 +39,8 @@ const NAVIGATION = [
 ]
 
 const Sidebar = () => {
+    const location = useLocation()
+
     return (
         <Layout.Sider className='sidebar'>
             <div className='sidebare-wrapper'>
@@ -48,9 +50,9 @@ const Sidebar = () => {
                     </div>
                     <div className='navigation-wrap'>
                         {NAVIGATION.map(item => (
-                            <div className={'icon-sidebar' + (item.isActive ? ' active' : '')} key={item.path}>
+                            <Link className={'icon-sidebar' + (location.pathname === item.path ? ' active' : '')} key={item.path} to={item.path}>
                                 <img src={item.icon} alt='Vector' width='22' height='22' />
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

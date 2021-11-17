@@ -1,0 +1,75 @@
+.users {
+    height: 100%;
+    width: 345px;
+    margin-left: 30px;
+    margin-top: 6px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    .content-profile {
+        display: flex;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    .content-profile-image {
+        width: 90px;
+        height: 90px;
+        background-color: #F3F7FA;
+        border-radius: 10px;
+    }
+    .profill {
+        text-align: center;
+        padding-top: 15px;
+    }
+    .info-users-name {
+        margin-left: 12px;
+        .id-user{
+            color: #647C9F;
+            font-size: 14px;
+        }
+    }
+    .user-name {
+        color: #1C3349;
+        font-size: 16px;
+        font-family: Montserrat;
+    }
+    .pseudonym {
+        display: flex;
+    }
+    .pseudonym-name {
+        color: #647C9F;
+        font-size: 14px;
+    }
+    .pensel {
+        margin-left: 6px;
+        color: #647C9F;
+        width: 11px;
+        height: 11px;
+    }
+    .navigation-button {
+        width: 300px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 25px;
+        padding-left: 37px;
+        background: #2688E3;
+        opacity: 0.15;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-right: 25px;
+    .description-info {
+        color: black !important;
+    }
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 25px;
+        padding-left: 37px;
+    }
+}
