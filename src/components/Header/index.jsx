@@ -3,7 +3,7 @@ import { CaretDownOutlined } from '@ant-design/icons';
 import { Layout } from 'antd';
 import MaskGroup from '../../img/MaskGroup.png'
 import colocol from '../../img/colocol.png'
-import profile from '../../img/profile.png'
+import profill from '../../img/profill.png'
 import mastercard from '../../img/mastercard.png'
 import verification from '../../img/verification.png'
 import settings from '../../img/settings.png'
@@ -12,12 +12,12 @@ import { Menu, Dropdown } from 'antd';
 
 const MENU = [
   {
-    img: profile,
+    img: profill,
     path: '/profile',
     texData: 'Личные данные и адреса',
   },
   {
-    img: profile,
+    img: profill,
     path: '/profile',
     texData: 'Контактные данные',
   },
@@ -45,11 +45,11 @@ const MENU = [
 
 const menu = (
     <Menu className='dropwawn-menu'>
-      <Menu.Item key="0">
+      <div>
         <button className='button-2'>
             <span className='btn-2'>Подтвердить личность</span>
         </button>
-      </Menu.Item>
+      </div>
       {MENU.map(item => (
         <Menu.Item key={item.path}>
           <div className='user'>

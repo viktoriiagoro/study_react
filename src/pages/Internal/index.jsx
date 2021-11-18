@@ -1,9 +1,10 @@
 import Users from '../Internal/components/Users'
+import './index.scss'
 
 
 const App = () => {
   return (
-    <div>
+    <div className='content-users'>
       <Users />
     </div>
   );

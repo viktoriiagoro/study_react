@@ -57,9 +57,7 @@
     background: linear-gradient(268.75deg, rgba(214, 52, 52, 0.55) 1.28%, rgba(238, 52, 117, 0.55) 97.88%), #DD3E77;
     border: none;
     width: 230px;
-    margin-top: 28px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 20px 20px;
 }
 .btn-2 {
     color: #FFFFFF;
@@ -74,8 +72,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 15px;
+    padding: 10px 30px;
+    
+}
+.img-profile {
+    color: #647C9F !important;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
 }
 
 .dropbtn {
@@ -100,11 +104,9 @@
     z-index: 1;
     border-radius: 10px;
 }
-.description-info-user:hover{ opacity: 0.2; }
 .description-info-user {
     color: #1C3349;
     font-size: 14px;
-    margin-left: 15px;
 }
 .img-mark {
     width: 11px;
@@ -143,4 +145,12 @@
     width: 17px;
     height: 19px;
     margin-top: 15px;
+}
+
+.ant-dropdown-menu-item {
+    &:hover {
+        .description-info-user {
+            opacity: 0.2;
+        }
+    }
 }

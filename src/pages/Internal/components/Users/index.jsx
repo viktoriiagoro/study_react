@@ -1,15 +1,19 @@
 import './index.scss'
-import profill from '../../../Internal/img/profill.png'
+import group from '../../../Internal/img/group.png'
 import pencel from '../../../Internal/img/pencel.png'
-import profile from '../../img/profile.png'
+import profill from '../../img/profill.png'
 import mastercard from '../../img/mastercard.png'
 import verification from '../../img/verification.png'
 import settings from '../../img/settings.png'
 import signoftheaccount from '../../img/signoftheaccount.png'
+import Card from '../Card'
+import time from '../../img/time.png'
+import desktop from '../../img/desktop.png'
+
 
 const LIST = [
     {
-      img: profile,
+      img: profill,
       path: '/profile',
       texData: 'Контактные данные',
     },
@@ -41,7 +45,7 @@ const Users = () => {
             <div className='content-profile'>
                 <diV>
                     <div className='content-profile-image'>
-                        <div className='profill'><img src={profill} alt='profill' /></div>
+                        <div className='group'><img src={group} alt='profill' /></div>
                     </div>
                 </diV>
                 <div className='info-users-name'>
@@ -54,17 +58,28 @@ const Users = () => {
                 </div>
 
             </div>
-            <div>
-            <div className='navigation-button'>
-                <div className='img-profile'><img src={profile} alt='profile' width='16px' height='20px' /></div>
-                <div className='description-info'>Личные данные</div>
-            </div>
+            <div className='wrapper-content-navigation'>
+                <div className='navigation-button'>
+                    <div className='img-profile'><img src={profill} alt='profile' width='16px' height='20px' /></div>
+                    <div className='description-info'>Личные данные и адреса</div>
+                </div>
                 {LIST.map(item => (
                     <div className='navigation'>
-                        <img className='img-profile' src={item.img} alt={item.path} />
+                        <div className='img-profile'><img  src={item.img} alt={item.path} /></div>
                         <div className='description-info-user'>{item.texData}</div>
                     </div>
                 ))}
+            </div>
+            <Card />
+            <div className='footer'>
+                <div className='footer-info'>
+                    <img src={time} alt='time' width='12px' height='12px' />
+                    <div className='footer-date'>Последний вход: 23 февраля 14:45</div>
+                </div>
+                <div className='footer-info'>
+                    <img src={desktop} alt='desktop' />
+                    <div className='footer-date'>Chrome Windows. DESKTOP-0452ERT</div>
+                </div>
             </div>
         </div>
     )
