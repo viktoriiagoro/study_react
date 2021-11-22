@@ -1,51 +1,82 @@
 .data-user {
-    height: 384px;
     background-color: #FFFFFF;
     box-shadow: 0px 17.0263px 37.4579px rgba(202, 214, 223, 0.3);
     box-sizing: 10px;
     width: 100%;
-    margin-left: 30px;
     border-radius: 10px;
 
     .wrapper-data {
-        padding: 21px 19px 42px 20px;
+        padding: 21px 19px 15px 20px;
+        .change-data {
+            display: flex;
+            justify-content: space-between;
+            .verification-info {
+                display: flex;
+                align-items: baseline;
+                .personal-data {
+                    font-size: 16px;
+                    color: #1C3349;
+                    font-weight: 600;
+                }
+                .done {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 14px;
+                }
+                .done-personal-data {
+                    color: #A2CF59;
+                    font-weight: 600;
+                    font-size: 12px;
+                    margin-left: 3px;
+                    width: 98px;
+                    height: 16px;
+                }
+
+            }
+            .change-data-user {
+                color: #2688E3;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        .ant-form-item {
+            label {
+                color: #647C9F;
+                font-size: 12px;
+            }
+            input {
+                background-color: #F3F7FA;
+                border-radius: 5px;
+                height: 50px;
+                width: 100%;
+            }
+            .ant-input-lg {
+                border: 0px solid #d9d9d9 !important;
+            }
+
+        }
+        .info-personal {
+            color: #647C9F;
+            font-size: 12px;
+            font-weight: normal;
+            padding-bottom: 10px;
+        }
+        .input-doc {
+            width: 100%;
+            height: 150px;
+            background-color: #F3F7FA;
+            border-radius: 5px;
+            .document-chek {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
     }
-    .change-data {
-        display: flex;
-        justify-content: space-between;
+    .ant-form {
+        padding-top: 28px !important;
     }
-    .verification-info {
-        display: flex;
-        align-items: baseline;
-    }
-    .personal-data {
-        font-size: 16px;
-        color: #1C3349;
-        font-weight: 600;
-    }
-    .done {
-        width: 20px;
-        height: 20px;
-        margin-left: 14px;
-    }
-    .done-personal-data {
-        color: #A2CF59;
-        font-weight: 600;
-        font-size: 12px;
-        margin-left: 3px;
-    }
-    .change-data-user {
-        color: #2688E3;
-        font-size: 14px;
-        font-weight: 600;
-    }
-    .info-personal {
-        color: #647C9F;
-        font-size: 12px;
-        font-weight: normal;
-        padding-bottom: 10px;
-    }
-    .ant-row {
-        padding-top: 28px;
-    }
+    
 }
