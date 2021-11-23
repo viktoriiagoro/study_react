@@ -8,6 +8,11 @@ const Additional = () => {
                 <div className='text-attention'>
                     <img  src={attention} alt='attention' />
                     <div className='add-text'>Добавьте данные вашего адреса и банковской карты для получения договоров по приобретенным лотам и вывода дохода на вашу карту. </div>
+                    <div>
+                        <button className='button-attention'>
+                            <div className='text-button'>Добавить адрес и банковскую карту</div>
+                        </button>
+                    </div>
                 </div>
             </div>
             
